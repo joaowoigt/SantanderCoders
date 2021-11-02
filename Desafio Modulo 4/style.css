@@ -1,0 +1,270 @@
+/* base css style */
+:root {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 0.8rem;
+}
+
+h6 {
+    font-size: 0.7rem;
+}
+
+/* container that wraps all site */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    padding: 48px;
+}
+
+/* main nav bar */
+.navbar-nav a {
+    color: white !important;
+}
+
+.navbar-nav :hover {
+    background: #72c4ec !important;
+}
+
+/* side search section */
+.side-wrapper-container {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+
+}
+
+.side-wrapper-container h5 {
+    color: #8e9d75;
+    font-weight: bold;
+}
+
+.side-wrapper-container h6 {
+    color: #8e9d75;
+}
+
+.side-container {
+    background: #fddb87;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.search-input {
+    width: 95%;
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+::placeholder {
+    font-size: small;
+}
+
+.state-searched-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+}
+
+.cancel-search {
+    background: transparent;
+    border: none;
+    color: #8e9d75;
+}
+
+.switcher-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+}
+
+ /* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+} 
+
+.switcher-container h6 {
+      margin-left: 16px;
+      color: black;
+}
+
+select {
+    width: 95%;
+    height: 40px;
+    background: white;
+    border: none;
+    border-radius: 4px;
+}
+  
+select option {
+    background: white;
+    color: #8e9d75;
+}
+
+.price-text-section {
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.price-input-section {
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.price-input-section input {
+    width: 40%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+}
+
+.number-buttons {
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.number-buttons button {
+    border: none;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 40%;
+}
+
+.number-buttons :hover {
+    background: rgb(179, 174, 174);
+}
+
+.side-container-second {
+    padding: 16px;
+    border-radius: 8px;
+    border: #e0dfdf solid 1px;
+    margin-top: 16px;
+}
+
+.area-text-section {
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+}
+
+.area-input-section {
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.area-input-section input {
+    width: 40%;
+    height: 40px;
+    border-radius: 8px;
+    border:#e0dfdf solid 1px;
+    padding: 8px;
+}
+
+/* main section */
+main {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    padding: 8px;
+}
+/* main navbar */
+.main-section-navbar :hover {
+    background: #72c4ec;
+}
+
+.main-section-navbar a {
+    color: #2196F3;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.search-result {
+    display: flex;
+    margin-top: 16px;
+}
+
+.search-result h4 {
+    margin-right: 8px;
+}
+
+.search-result-state button {
+    background: transparent;
+    border-radius: 16px;
+    border: #2196F3 solid 1px;
+    color: #2196F3;
+    padding: 4px;
+    margin-bottom: 16px;
+}
